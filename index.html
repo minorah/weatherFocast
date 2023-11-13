@@ -13,29 +13,36 @@
 <body>
   <div class="weather-app">
     <header>
-       <form>
-         <input type="Search"placeholder="Enter a city..."required />
-         <input type="Submit"value="Search"/>
+       <form class="search-form">
+         <input type="Search"placeholder="Enter a city..."required  class="search-form-input"/>
+         <input type="Submit"value="Search"class="search-form-button"/>
        </form>
     </header>
     <main>
+      <div class="weather-app-data">
              <div>
-            <h1>
+            <h1 class="weather-app-city">
               Pretoria
              </h1>
-                  <p>
+                  <p class="weather-app-details">
               Tuesday 14:49, scattered clouds
                 <br/>
-                 Humidity : 66% ,Wind : 3.13km/h
+                 Humidity : <strong>66%</strong> ,Wind : <strong>3.13km/h</strong>
                </p>
               </div>
-              <div>☀️12°C</div>
+              <div class="weather-app-temperature-container">
+                <div class="weather-app-icon">☀️</div>
+                <div class="weather-app-temperature" >12</div>
+                <div class="weather-app-unit">°C</div>
+            </div>
+          
   </main>
   </body>
     <footer>
-    </div>
+    
         This project was Coded by 
         <a href="https://github.com/minorah"target="blank">Hildah Makatu</a> open-sourced <a href="https://github.com/minorah/weatherFocast"target="blank">on Github</a> and website hosted on <a href="https://main--wfocast.netlify.app/"target="blank"> on Netlify</a>
     </footer>
+  </div>
 </body>
 </html>
