@@ -13,15 +13,15 @@
 <body>
   <div class="weather-app">
     <header>
-       <form class="search-form">
-         <input type="Search"placeholder="Enter a city..."required  class="search-form-input"/>
+       <form class="search-form" id="search-form">
+         <input type="Search"placeholder="Enter a city..."required id="search-form-input"  class="search-form-input"/>
          <input type="Submit"value="Search"class="search-form-button"/>
        </form>
     </header>
     <main>
       <div class="weather-app-data">
              <div>
-            <h1 class="weather-app-city">
+            <h1 class="weather-app-city"id="city">
               Pretoria
              </h1>
                   <p class="weather-app-details">
@@ -44,5 +44,6 @@
         <a href="https://github.com/minorah"target="blank">Hildah Makatu</a> open-sourced <a href="https://github.com/minorah/weatherFocast"target="blank">on Github</a> and website hosted on <a href="https://main--wfocast.netlify.app/"target="blank"> on Netlify</a>
     </footer>
   </div>
+  <script src="src/index.js"></script>
 </body>
 </html>
