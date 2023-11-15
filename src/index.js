@@ -7,17 +7,21 @@ function refreshWeather(response){
     let windSpeedElement=document.querySelector("#wind-speed");
     let timeElement=document.querySelector("#time");
     let date=new Date(response.data.time*1000);
-     
+    let iconElement=document.querySelector("#icon");
 
-    
-    
+
+
+
+
+    iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`
+     
      timeElement.innerHTML=formatDate(date);
       cityElement.innerHTML=response.data.city;
      descriptionElement.innerHTML=response.data.condition.description;
      humidityElement.innerHTML=`${response.data.temperature.humidity}%`;
      windSpeedElement.innerHTML=`${response.data.wind.speed}km/h`;
      temperatureElement.innerHTML= Math.round(temperature);
-
+}
 
         function formatDate(date){
            
@@ -46,7 +50,7 @@ function refreshWeather(response){
 
 
 
-}
+
 
 function searchCity (city){
    let apiKey="7707b06c4614a73o5b83t0498f30e5af";
